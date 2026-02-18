@@ -3,14 +3,201 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Bootstrap Grid System Lesson</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <!-- <div class="d-grid">
-      <div>Item 1</div>
-      <div>Item 2</div>
-    </div> -->
+    <div class="container py-4">
+      <h1 class="mb-4">Bootstrap Grid System Lesson</h1>
+
+      <!-- Section 1: Container -->
+      <h2 class="h4 mb-3">1. Container</h2>
+      <p class="mb-2">Container provides a responsive fixed width container.</p>
+      <div class="container bg-light border p-3 mb-4">
+        <p class="mb-0">This is a container (centered, fixed width)</p>
+      </div>
+
+      <p class="mb-2">Container-fluid provides a full width container.</p>
+      <div class="container-fluid bg-light border p-3 mb-4">
+        <p class="mb-0">This is a container-fluid (full width)</p>
+      </div>
+
+      <!-- Section 2: Basic Row -->
+      <h2 class="h4 mb-3">2. Basic Row</h2>
+      <p class="mb-2">Rows must be placed inside a container. Columns must be inside a row.</p>
+      <div class="container mb-4">
+        <div class="row bg-warning">
+          <div class="col bg-info text-white p-3 text-center">Column 1</div>
+          <div class="col bg-success text-white p-3 text-center">Column 2</div>
+          <div class="col bg-danger text-white p-3 text-center">Column 3</div>
+        </div>
+      </div>
+
+      <!-- Section 3: Column Sizes col-1 to col-12 -->
+      <h2 class="h4 mb-3">3. Column Sizes (col-1 to col-12)</h2>
+      <p class="mb-2">Bootstrap uses a 12-column grid system. You can specify how many columns each element takes.</p>
+      
+      <p class="mb-2">col-1 (1 column)</p>
+      <div class="row mb-2">
+        <div class="col-1 bg-primary text-white text-center p-2">1</div>
+        <div class="col-1 bg-primary text-white text-center p-2">1</div>
+        <div class="col-1 bg-primary text-white text-center p-2">1</div>
+        <div class="col-1 bg-primary text-white text-center p-2">1</div>
+        <div class="col-1 bg-primary text-white text-center p-2">1</div>
+        <div class="col-1 bg-primary text-white text-center p-2">1</div>
+        <div class="col-1 bg-primary text-white text-center p-2">1</div>
+        <div class="col-1 bg-primary text-white text-center p-2">1</div>
+        <div class="col-1 bg-primary text-white text-center p-2">1</div>
+        <div class="col-1 bg-primary text-white text-center p-2">1</div>
+        <div class="col-1 bg-primary text-white text-center p-2">1</div>
+        <div class="col-1 bg-primary text-white text-center p-2">1</div>
+      </div>
+
+      <p class="mb-2">col-2 (2 columns each)</p>
+      <div class="row mb-2">
+        <div class="col-2 bg-primary text-white text-center p-2">2</div>
+        <div class="col-2 bg-primary text-white text-center p-2">2</div>
+        <div class="col-2 bg-primary text-white text-center p-2">2</div>
+        <div class="col-2 bg-primary text-white text-center p-2">2</div>
+        <div class="col-2 bg-primary text-white text-center p-2">2</div>
+        <div class="col-2 bg-primary text-white text-center p-2">2</div>
+      </div>
+
+      <p class="mb-2">col-3 (3 columns each - 4 items)</p>
+      <div class="row mb-2">
+        <div class="col-3 bg-primary text-white text-center p-2">3</div>
+        <div class="col-3 bg-primary text-white text-center p-2">3</div>
+        <div class="col-3 bg-primary text-white text-center p-2">3</div>
+        <div class="col-3 bg-primary text-white text-center p-2">3</div>
+      </div>
+
+      <p class="mb-2">col-4 (4 columns each - 3 items)</p>
+      <div class="row mb-2">
+        <div class="col-4 bg-primary text-white text-center p-2">4</div>
+        <div class="col-4 bg-primary text-white text-center p-2">4</div>
+        <div class="col-4 bg-primary text-white text-center p-2">4</div>
+      </div>
+
+      <p class="mb-2">col-6 (6 columns each - 2 items)</p>
+      <div class="row mb-2">
+        <div class="col-6 bg-primary text-white text-center p-2">6</div>
+        <div class="col-6 bg-primary text-white text-center p-2">6</div>
+      </div>
+
+      <p class="mb-2">col-12 (full width)</p>
+      <div class="row mb-4">
+        <div class="col-12 bg-primary text-white text-center p-2">12</div>
+      </div>
+
+      <!-- Section 4: Mixed Column Sizes -->
+      <h2 class="h4 mb-3">4. Mixed Column Sizes</h2>
+      <p class="mb-2">You can mix different column sizes in a row.</p>
+      <div class="row mb-4">
+        <div class="col-8 bg-success text-white text-center p-2">col-8</div>
+        <div class="col-4 bg-warning text-dark text-center p-2">col-4</div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-4 bg-success text-white text-center p-2">col-4</div>
+        <div class="col-4 bg-warning text-dark text-center p-2">col-4</div>
+        <div class="col-4 bg-danger text-white text-center p-2">col-4</div>
+      </div>
+
+      <!-- Section 5: Responsive Breakpoints -->
+      <h2 class="h4 mb-3">5. Responsive Grid (col-sm, col-md, col-lg, col-xl)</h2>
+      <p class="mb-2">Bootstrap provides responsive breakpoints: sm (≥576px), md (≥768px), lg (≥992px), xl (≥1200px)</p>
+      <p class="mb-2">Resize the browser to see the responsive behavior:</p>
+      
+      <div class="row mb-4">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-primary text-white p-2 text-center">
+          Responsive Column
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-success text-white p-2 text-center">
+          Responsive Column
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-danger text-white p-2 text-center">
+          Responsive Column
+        </div>
+        <div class="col-12 col-sm-6 col-md-12 col-lg-3 bg-warning text-dark p-2 text-center">
+          Responsive Column
+        </div>
+      </div>
+
+      <!-- Section 6: Auto Layout Columns -->
+      <h2 class="h4 mb-3">6. Auto Layout Columns (col)</h2>
+      <p class="mb-2">Use col without a number to automatically divide equal width columns.</p>
+      <div class="row mb-4">
+        <div class="col bg-info text-white text-center p-2">Auto</div>
+        <div class="col bg-info text-white text-center p-2">Auto</div>
+        <div class="col bg-info text-white text-center p-2">Auto</div>
+      </div>
+
+      <!-- Section 7: Gutter Classes -->
+      <h2 class="h4 mb-3">7. Gutter Classes (g-0 to g-5)</h2>
+      <p class="mb-2">Control the space between columns using g-0, g-1, g-2, g-3, g-4, g-5</p>
+      
+      <p class="mb-2">g-0 (no gutter)</p>
+      <div class="row g-0 mb-2">
+        <div class="col-4 bg-primary text-white p-2">4</div>
+        <div class="col-4 bg-primary text-white p-2">4</div>
+        <div class="col-4 bg-primary text-white p-2">4</div>
+      </div>
+
+      <p class="mb-2">g-3 (default gutter)</p>
+      <div class="row g-3 mb-4">
+        <div class="col-4 bg-primary text-white p-2">4</div>
+        <div class="col-4 bg-primary text-white p-2">4</div>
+        <div class="col-4 bg-primary text-white p-2">4</div>
+      </div>
+
+      <!-- Section 8: Vertical Alignment -->
+      <h2 class="h4 mb-3">8. Vertical Alignment</h2>
+      <p class="mb-2">Use align-items-start, align-items-center, align-items-end on the row.</p>
+      
+      <p class="mb-2">align-items-start</p>
+      <div class="row align-items-start bg-light border mb-2" style="min-height: 100px;">
+        <div class="col-4 bg-warning p-2">Column</div>
+        <div class="col-4 bg-warning p-2">Column</div>
+        <div class="col-4 bg-warning p-2">Column</div>
+      </div>
+
+      <p class="mb-2">align-items-center</p>
+      <div class="row align-items-center bg-light border mb-2" style="min-height: 100px;">
+        <div class="col-4 bg-warning p-2">Column</div>
+        <div class="col-4 bg-warning p-2">Column</div>
+        <div class="col-4 bg-warning p-2">Column</div>
+      </div>
+
+      <p class="mb-2">align-items-end</p>
+      <div class="row align-items-end bg-light border mb-4" style="min-height: 100px;">
+        <div class="col-4 bg-warning p-2">Column</div>
+        <div class="col-4 bg-warning p-2">Column</div>
+        <div class="col-4 bg-warning p-2">Column</div>
+      </div>
+
+      <!-- Section 9: Horizontal Alignment -->
+      <h2 class="h4 mb-3">9. Horizontal Alignment</h2>
+      <p class="mb-2">Use justify-content-start, center, end, between, around on the row.</p>
+      
+      <p class="mb-2">justify-content-center</p>
+      <div class="row justify-content-center bg-light border mb-2">
+        <div class="col-4 bg-info text-white p-2">Column</div>
+        <div class="col-4 bg-info text-white p-2">Column</div>
+      </div>
+
+      <p class="mb-2">justify-content-between</p>
+      <div class="row justify-content-between bg-light border mb-4">
+        <div class="col-4 bg-info text-white p-2">Column</div>
+        <div class="col-4 bg-info text-white p-2">Column</div>
+      </div>
+
+
+    </div>
 
     <script src="./bootstrap.min.js"></script>
   </body>

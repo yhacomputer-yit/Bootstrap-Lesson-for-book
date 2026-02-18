@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Gap Lesson</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+    <div class="container py-4">
+        <h1 class="mb-4">Bootstrap Gap Lesson</h1>
+
+        <!-- Section 1: What is Gap? -->
+        <h2 class="h4 mb-3">1. What is Gap?</h2>
+        <p class="mb-2">The gap property in Bootstrap is used to create spacing between flex items or grid items. It replaces the need for margins between items.</p>
+        <p class="mb-2">Bootstrap provides gap classes from gap-0 to gap-5.</p>
+        
+        <p class="mb-2">Without gap (using margins):</p>
+        <div class="d-flex bg-light border mb-3" style="height: 80px;">
+            <div class="bg-primary text-white p-2 me-2">Item 1</div>
+            <div class="bg-primary text-white p-2 me-2">Item 2</div>
+            <div class="bg-primary text-white p-2">Item 3</div>
+        </div>
+
+        <p class="mb-2">With gap-3 (automatic spacing):</p>
+        <div class="d-flex gap-3 bg-light border mb-4">
+            <div class="bg-primary text-white p-2">Item 1</div>
+            <div class="bg-primary text-white p-2">Item 2</div>
+            <div class="bg-primary text-white p-2">Item 3</div>
+        </div>
+
+        <!-- Section 2: Gap Sizes (gap-0 to gap-5) -->
+        <h2 class="h4 mb-3">2. Gap Sizes (gap-0 to gap-5)</h2>
+        <p class="mb-2">Bootstrap provides 6 gap sizes from 0 to 5:</p>
+        
+        <p class="mb-2">gap-0 (no gap)</p>
+        <div class="d-flex gap-0 bg-light border mb-2">
+            <div class="bg-primary text-white p-2">1</div>
+            <div class="bg-primary text-white p-2">2</div>
+            <div class="bg-primary text-white p-2">3</div>
+        </div>
+
+        <p class="mb-2">gap-1 (0.25rem)</p>
+        <div class="d-flex gap-1 bg-light border mb-2">
+            <div class="bg-primary text-white p-2">1</div>
+            <div class="bg-primary text-white p-2">2</div>
+            <div class="bg-primary text-white p-2">3</div>
+        </div>
+
+        <p class="mb-2">gap-2 (0.5rem)</p>
+        <div class="d-flex gap-2 bg-light border mb-2">
+            <div class="bg-primary text-white p-2">1</div>
+            <div class="bg-primary text-white p-2">2</div>
+            <div class="bg-primary text-white p-2">3</div>
+        </div>
+
+        <p class="mb-2">gap-3 (1rem) - Default</p>
+        <div class="d-flex gap-3 bg-light border mb-2">
+            <div class="bg-primary text-white p-2">1</div>
+            <div class="bg-primary text-white p-2">2</div>
+            <div class="bg-primary text-white p-2">3</div>
+        </div>
+
+        <p class="mb-2">gap-4 (1.5rem)</p>
+        <div class="d-flex gap-4 bg-light border mb-2">
+            <div class="bg-primary text-white p-2">1</div>
+            <div class="bg-primary text-white p-2">2</div>
+            <div class="bg-primary text-white p-2">3</div>
+        </div>
+
+        <p class="mb-2">gap-5 (3rem)</p>
+        <div class="d-flex gap-5 bg-light border mb-4">
+            <div class="bg-primary text-white p-2">1</div>
+            <div class="bg-primary text-white p-2">2</div>
+            <div class="bg-primary text-white p-2">3</div>
+        </div>
+
+        <!-- Section 3: Gap with Flex Direction -->
+        <h2 class="h4 mb-3">3. Gap with Flex Direction</h2>
+        <p class="mb-2">Gap works with both flex-direction: row and column:</p>
+        
+        <p class="mb-2">flex-row with gap-3 (horizontal spacing):</p>
+        <div class="d-flex gap-3 bg-light border mb-2" style="height: 100px;">
+            <div class="bg-success text-white p-2">Item 1</div>
+            <div class="bg-success text-white p-2">Item 2</div>
+            <div class="bg-success text-white p-2">Item 3</div>
+        </div>
+
+        <p class="mb-2">flex-column with gap-3 (vertical spacing):</p>
+        <div class="d-flex flex-column gap-3 bg-light border mb-4" style="height: 150px;">
+            <div class="bg-success text-white p-2">Item 1</div>
+            <div class="bg-success text-white p-2">Item 2</div>
+            <div class="bg-success text-white p-2">Item 3</div>
+        </div>
+
+        <!-- Section 4: Gap with Flex Wrap -->
+        <h2 class="h4 mb-3">4. Gap with Flex Wrap</h2>
+        <p class="mb-2">Gap works with flex-wrap to create spacing in wrapped items:</p>
+        <div class="d-flex flex-wrap gap-3 bg-light border mb-4">
+            <div class="bg-warning text-dark p-2">Item 1</div>
+            <div class="bg-warning text-dark p-2">Item 2</div>
+            <div class="bg-warning text-dark p-2">Item 3</div>
+            <div class="bg-warning text-dark p-2">Item 4</div>
+            <div class="bg-warning text-dark p-2">Item 5</div>
+            <div class="bg-warning text-dark p-2">Item 6</div>
+        </div>
+
+        <!-- Section 5: Gap with Grid -->
+        <h2 class="h4 mb-3">5. Gap with CSS Grid</h2>
+        <p class="mb-2">Gap can also be used with CSS Grid layouts:</p>
+        
+        <p class="mb-2">Grid with gap-3:</p>
+        <div class="grid gap-3 mb-4" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+            <div class="bg-danger text-white p-2">Grid 1</div>
+            <div class="bg-danger text-white p-2">Grid 2</div>
+            <div class="bg-danger text-white p-2">Grid 3</div>
+            <div class="bg-danger text-white p-2">Grid 4</div>
+            <div class="bg-danger text-white p-2">Grid 5</div>
+            <div class="bg-danger text-white p-2">Grid 6</div>
+        </div>
+
+        <!-- Section 6: Row Gap and Column Gap -->
+        <h2 class="h4 mb-3">6. Row Gap (row-gap) and Column Gap (col-gap)</h2>
+        <p class="mb-2">You can control row and column gaps separately:</p>
+        
+        <p class="mb-2">row-gap-5 (vertical only):</p>
+        <div class="d-flex flex-column row-gap-5 bg-light border mb-2">
+            <div class="bg-info text-white p-2">Item 1</div>
+            <div class="bg-info text-white p-2">Item 2</div>
+            <div class="bg-info text-white p-2">Item 3</div>
+        </div>
+
+        <p class="mb-2">column-gap-4 (horizontal only):</p>
+        <div class="d-flex column-gap-4 bg-light border mb-2">
+            <div class="bg-info text-white p-2">Item 1</div>
+            <div class="bg-info text-white p-2">Item 2</div>
+            <div class="bg-info text-white p-2">Item 3</div>
+        </div>
+
+        <p class="mb-2">Combined row-gap and column-gap:</p>
+        <div class="d-flex flex-wrap row-gap-4 column-gap-3 bg-light border mb-4">
+            <div class="bg-info text-white p-2">Item 1</div>
+            <div class="bg-info text-white p-2">Item 2</div>
+            <div class="bg-info text-white p-2">Item 3</div>
+            <div class="bg-info text-white p-2">Item 4</div>
+            <div class="bg-info text-white p-2">Item 5</div>
+            <div class="bg-info text-white p-2">Item 6</div>
+        </div>
+
+        <!-- Section 7: Responsive Gap -->
+        <h2 class="h4 mb-3">7. Responsive Gap</h2>
+        <p class="mb-2">You can use responsive gap classes: gap-*-{size}</p>
+        
+        <p class="mb-2">gap-1 gap-sm-2 gap-md-3 gap-lg-4 (resize browser to see changes):</p>
+        <div class="d-flex gap-1 gap-sm-2 gap-md-3 gap-lg-4 bg-light border mb-4">
+            <div class="bg-dark text-white p-2">Item 1</div>
+            <div class="bg-dark text-white p-2">Item 2</div>
+            <div class="bg-dark text-white p-2">Item 3</div>
+        </div>
+
+        <!-- Section 8: Gap vs Margin Comparison -->
+        <h2 class="h4 mb-3">8. Gap vs Margin Comparison</h2>
+        <p class="mb-2">Gap is preferred over margins for these reasons:</p>
+        <ul class="mb-4">
+            <li>Gap doesn't create extra space at the outer edges</li>
+            <li>Gap is easier to manage in wrapped layouts</li>
+            <li>Gap works consistently in both flex and grid</li>
+            <li>Less code needed compared to margin on each item</li>
+        </ul>
+
+        <p class="mb-2">Using margins (requires me-2 on each item):</p>
+        <div class="d-flex bg-light border mb-2">
+            <div class="bg-primary text-white p-2 me-2">Item 1</div>
+            <div class="bg-primary text-white p-2 me-2">Item 2</div>
+            <div class="bg-primary text-white p-2">Item 3</div>
+        </div>
+
+        <p class="mb-2">Using gap (cleaner code):</p>
+        <div class="d-flex gap-2 bg-light border mb-4">
+            <div class="bg-primary text-white p-2">Item 1</div>
+            <div class="bg-primary text-white p-2">Item 2</div>
+            <div class="bg-primary text-white p-2">Item 3</div>
+        </div>
+
+        <!-- Section 9: Gap with Justify Content -->
+        <h2 class="h4 mb-3">9. Gap with Justify Content</h2>
+        <p class="mb-2">Combine gap with justify-content for powerful layouts:</p>
+        
+        <p class="mb-2">justify-content-center + gap-3:</p>
+        <div class="d-flex justify-content-center gap-3 bg-light border mb-2">
+            <div class="bg-secondary text-white p-2">Item 1</div>
+            <div class="bg-secondary text-white p-2">Item 2</div>
+            <div class="bg-secondary text-white p-2">Item 3</div>
+        </div>
+
+        <p class="mb-2">justify-content-between + gap-3:</p>
+        <div class="d-flex justify-content-between gap-3 bg-light border mb-4">
+            <div class="bg-secondary text-white p-2">Item 1</div>
+            <div class="bg-secondary text-white p-2">Item 2</div>
+            <div class="bg-secondary text-white p-2">Item 3</div>
+        </div>
+
+    </div>
+
+    <script src="./bootstrap.min.js"></script>
+</body>
+</html>
